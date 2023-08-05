@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./Form.css"
-import TextField from "../FieldText/FieldText"
+import Field from "../Field/Field"
 import ListaOpciones from "../ListaOpciones/ListaOpciones"
 import Boton from "../Boton/Boton"
 
@@ -11,7 +11,10 @@ const Formulario = (props) => {
     const [foto, actualizarFoto] = useState("")
     const [equipo, actualizarEquipo] = useState("")
 
-    const { registrarColaborador } = props
+    const [titulo, actualizarTitulo] = useState("")
+    const [color, actualizarColor] = useState("")
+
+    const { registrarColaborador, crearEquipo } = props
 
     const manejarEnvio = (e) => {
         e.preventDefault()
@@ -24,31 +27,36 @@ const Formulario = (props) => {
         registrarColaborador(datosAEnviar)
     }
 
+    const manejarNuevoEquipo = (e) => {
+        e.preventDefault()
+        crearEquipo({ titulo, colorPrimario: color })
+    }
+
     return <section className="formulario">
         <form onSubmit={manejarEnvio}>
             <h2>Rellena el formulario para crear el colaborador.</h2>
-            <TextField 
-                titulo="Nombre" 
-                placeholder="Ingresar nombre" 
-                required 
+            <Field
+                titulo="Nombre"
+                placeholder="Ingresar nombre"
+                required
                 valor={nombre}
                 actualizarValor={actualizarNombre}
             />
-            <TextField 
-                titulo="Puesto" 
-                placeholder="Ingresar puesto" 
+            <Field
+                titulo="Puesto"
+                placeholder="Ingresar puesto"
                 required
                 valor={puesto}
-                actualizarValor={actualizarPuesto} 
+                actualizarValor={actualizarPuesto}
             />
-            <TextField 
-                titulo="Foto" 
-                placeholder="Ingresar enlace de foto" 
+            <Field
+                titulo="Foto"
+                placeholder="Ingresar enlace de foto"
                 required
                 valor={foto}
-                actualizarValor={actualizarFoto} 
+                actualizarValor={actualizarFoto}
             />
-            <ListaOpciones 
+            <ListaOpciones
                 valor={equipo}
                 actualizarValor={actualizarEquipo}
                 equipos={props.equipos}
@@ -57,6 +65,28 @@ const Formulario = (props) => {
                 Crear
             </Boton>
         </form>
+        <form onSubmit={manejarNuevoEquipo}>
+            <h2>Rellena el formulario para crear el equipo.</h2>
+            <Field
+                titulo="Titulo"
+                placeholder="Ingresar titulo"
+                required
+                valor={titulo}
+                actualizarValor={actualizarTitulo}
+            />
+            <Field
+                titulo="Color"
+                placeholder="Ingresar color en Hex"
+                required
+                valor={color}
+                actualizarValor={actualizarColor}
+                type="color"
+            />
+            <Boton>
+                Registrar Equipo
+            </Boton>
+        </form>
+
     </section>
 }
 
