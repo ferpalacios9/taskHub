@@ -3,6 +3,7 @@ import "./Form.css"
 import Field from "../Field/Field"
 import ListaOpciones from "../ListaOpciones/ListaOpciones"
 import Boton from "../Boton/Boton"
+import { v4 as uuidv4 } from 'uuid';
 
 const Formulario = (props) => {
 
@@ -19,17 +20,26 @@ const Formulario = (props) => {
     const manejarEnvio = (e) => {
         e.preventDefault()
         let datosAEnviar = {
+            id: uuidv4(),
             nombre, // Esto es lo mismo a nombre: nombre,
             puesto,
-            foto,
+            foto: URL.createObjectURL(foto),
             equipo
         }
         registrarColaborador(datosAEnviar)
+
+        // console.log(foto)
+        
     }
 
     const manejarNuevoEquipo = (e) => {
         e.preventDefault()
         crearEquipo({ titulo, colorPrimario: color })
+    }
+
+    // Cargar imagen colaborador
+    const cargarImagen = (e) => {
+        console.log("Imagen cargada")
     }
 
     return <section className="formulario">
@@ -53,8 +63,10 @@ const Formulario = (props) => {
                 titulo="Foto"
                 placeholder="Ingresar enlace de foto"
                 required
-                valor={foto}
+                //valor={foto} ESTE ERA EL ERROR
                 actualizarValor={actualizarFoto}
+                type="file"
+                accept="image/*"
             />
             <ListaOpciones
                 valor={equipo}

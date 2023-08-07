@@ -8,7 +8,7 @@ import Equipo from './components/Equipo/Equipo';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const [mostrarFormulario, actualizarMostrar] = useState(false)
+  const [mostrarFormulario, actualizarMostrar] = useState(true)
   const [colaboradores, actualizarColaboradores] = useState([{
     id: uuidv4(),
     equipo: "Front End",
@@ -94,7 +94,6 @@ function App() {
       colorSecundario: "#FFEEDF"
     }
   ])
-
 
   //Ternario --> condicion ? seMuestra : noSeMuestra
   // fragments --> condicion $$ seMuestra (esta es una opcion mas optimizada de ternario)

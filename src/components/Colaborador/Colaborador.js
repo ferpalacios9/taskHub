@@ -8,6 +8,7 @@ const Colaborador = (props) => {
         <AiFillCloseCircle onClick={() => eliminarColaborador(id)} className="eliminar" />
         <div className="encabezado" style={{ backgroundColor: colorPrimario }}>
             <img src={foto} alt={nombre}></img>
+            {/*<img src={foto} alt={nombre}></img>*/}
         </div>
         <div className="info">
             <h4>{nombre}</h4>

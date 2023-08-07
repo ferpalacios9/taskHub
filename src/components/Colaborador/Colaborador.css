@@ -9,10 +9,12 @@
     border-radius: 10px 10px 0px 0px;
 }
 .colaborador img {
+    height: 100px;
     width: 100px;
-    border-radius: 50%;
     position: relative;
     bottom: -50px;
+    clip-path: circle();
+    object-fit: cover;
 }
 
 .colaborador .info {
@@ -23,6 +25,9 @@
     padding-bottom: 40px;
     min-height: 100px;
     font-family: 'Montserrat', sans-serif;
+    /*padding-top: 30%;
+    padding-bottom: 10%;
+    height: 155px;*/
 }
 
 .colaborador .info h4 {
@@ -40,6 +45,8 @@
     padding: 0 24px;
     font-weight: 400;
     margin: 0;
+    max-height: 50px;
+    min-height: 44px;
 }
 
 .eliminar{
