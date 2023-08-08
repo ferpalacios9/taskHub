@@ -1,8 +1,38 @@
 .header {
-    background-color: #6278F7;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    overflow: hidden;
+    position: relative;
+    /* Para recortar la imagen si es más alta que 70% de la pantalla */
 }
 
 .header img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%; /* La imagen mantendrá su altura original */
+    object-fit: cover;
+    filter: blur(1px);
+}
+
+.probando {
+    color: white;
+    font-size: 50px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 300px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.contenido button {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
