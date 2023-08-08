@@ -44,7 +44,7 @@ const Formulario = (props) => {
 
     return <section className="formulario">
         <form onSubmit={manejarEnvio}>
-            <h2>Rellena el formulario para crear el colaborador.</h2>
+            <h2>Crear colaborador.</h2>
             <Field
                 titulo="Nombre"
                 placeholder="Ingresar nombre"
@@ -77,8 +77,8 @@ const Formulario = (props) => {
                 Crear
             </Boton>
         </form>
-        <form onSubmit={manejarNuevoEquipo}>
-            <h2>Rellena el formulario para crear el equipo.</h2>
+        <form  className="formulario__equipo" onSubmit={manejarNuevoEquipo}>
+            <h2>Crear equipo.</h2>
             <Field
                 titulo="Titulo"
                 placeholder="Ingresar titulo"

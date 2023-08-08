@@ -6,6 +6,7 @@ import Formulario from './components/Form/Form';
 import MiOrg from './components/MiOrg/MiOrg';
 import Equipo from './components/Equipo/Equipo';
 import Footer from './components/Footer/Footer';
+import NavigationBar from './components/NavBar/NavBar';
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(true)
@@ -54,13 +55,13 @@ function App() {
     {
       id: uuidv4(),
       titulo: "Programación",
-      colorPrimario: "#57C278",
+      colorPrimario: "#047127",
       colorSecundario: "#D9F7E9"
     },
     {
       id: uuidv4(),
       titulo: "Front End",
-      colorPrimario: "#82CFFA",
+      colorPrimario: "#0078C2",
       colorSecundario: "#E8F8FF"
     },
     {
@@ -78,7 +79,7 @@ function App() {
     {
       id: uuidv4(),
       titulo: "UX y Diseño",
-      colorPrimario: "#DB6EBF",
+      colorPrimario: "#610049",
       colorSecundario: "#FAE9F5"
     },
     {
@@ -90,7 +91,7 @@ function App() {
     {
       id: uuidv4(),
       titulo: "Innovación y Gestión",
-      colorPrimario: "#FF8A29",
+      colorPrimario: "#FA9200",
       colorSecundario: "#FFEEDF"
     }
   ])
@@ -151,6 +152,7 @@ function App() {
 
   return (
     <div>
+      {<NavigationBar />}
       <Header />
       {/*mostrarFormulario ? <Formulario /> : <></>*/}
       {

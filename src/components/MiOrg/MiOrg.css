@@ -6,11 +6,13 @@
 }
 
 .title {
+    font-family: 'Prata', serif;
     color: #6278F7;
     font-size: 40px;
     font-weight: 400;
     padding-bottom: 24px;
     border-bottom: 4px solid #6278F7;
+    margin: 40px 0;
 }
 
 .orgSection img {

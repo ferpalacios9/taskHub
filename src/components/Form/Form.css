@@ -7,15 +7,22 @@
 }
 
 .formulario form {
-    max-width: 35%;
+    width: 35%;
     background-color: #F6F6F6;
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
     padding: 8px 60px;
 }
 
+.formulario__equipo {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
 .formulario h2 {
     font-size: 24px;
     font-weight: 400;
     color: #212121;
+    margin-top: 27px;
 }
