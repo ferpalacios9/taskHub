@@ -15,15 +15,15 @@ function App() {
     equipo: "Front End",
     foto: "https://github.com/harlandlohora.png",
     nombre: "Harland Lohora",
-    puesto: "Instructor",
+    puesto: "Leader",
     fav: false
   },
   {
     id: uuidv4(),
-    equipo: "Programación",
+    equipo: "Data Science",
     foto: "https://github.com/genesysR-dev.png",
     nombre: "Genesys Rondón",
-    puesto: "Desarrolladora de software e instructora",
+    puesto: "Leader",
     fav: false
   },
   {
@@ -31,7 +31,7 @@ function App() {
     equipo: "UX and Design",
     foto: "https://github.com/JeanmarieAluraLatam.png",
     nombre: "Jeanmarie Quijada",
-    puesto: "Instructora en Alura Latam",
+    puesto: "Leader",
     fav: false
   },
   {
@@ -39,7 +39,7 @@ function App() {
     equipo: "Mobile",
     foto: "https://github.com/christianpva.png",
     nombre: "Christian Velasco",
-    puesto: "Head de Alura e Instructor",
+    puesto: "Leader",
     fav: false
   },
   {
@@ -47,7 +47,7 @@ function App() {
     equipo: "Innovation and Management",
     foto: "https://github.com/JoseDarioGonzalezCha.png",
     nombre: "Jose Gonzalez",
-    puesto: "Dev FullStack",
+    puesto: "Leader",
     fav: false
   }])
 

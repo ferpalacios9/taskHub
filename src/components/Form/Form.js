@@ -27,6 +27,7 @@ const Formulario = (props) => {
             equipo
         }
         registrarColaborador(datosAEnviar)
+        alert("New member added");
 
         // console.log(foto)
         
@@ -35,6 +36,7 @@ const Formulario = (props) => {
     const manejarNuevoEquipo = (e) => {
         e.preventDefault()
         crearEquipo({ titulo, colorPrimario: color })
+        alert("New team added");
     }
 
     // Cargar imagen colaborador
@@ -42,7 +44,7 @@ const Formulario = (props) => {
         console.log("Imagen cargada")
     }
 
-    return <section className="formulario">
+    return <section className="formulario" id="form">
         <form className="formulario__colab" onSubmit={manejarEnvio}>
             <h2>New member</h2>
             <Field

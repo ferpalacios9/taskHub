@@ -18,6 +18,7 @@
 
 .contenido {
     display: flex;
+    font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     height: 300px;
     position: absolute;
@@ -28,7 +29,6 @@
 }
 
 .info__container {
-    font-family: 'Montserrat', sans-serif;
     color: white;
     text-align: center;
 }
@@ -45,13 +45,15 @@
     margin-right: 10%;
 }
 
-.contenido button {
+.button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     width: 60%;
     margin-right: auto;
     margin-left: auto;
 }
+
+
 
 @media screen and (min-width:0px) {
     .contenido {
