@@ -28,7 +28,7 @@ function App() {
   },
   {
     id: uuidv4(),
-    equipo: "UX y Diseño",
+    equipo: "UX and Design",
     foto: "https://github.com/JeanmarieAluraLatam.png",
     nombre: "Jeanmarie Quijada",
     puesto: "Instructora en Alura Latam",
@@ -36,7 +36,7 @@ function App() {
   },
   {
     id: uuidv4(),
-    equipo: "Programación",
+    equipo: "Mobile",
     foto: "https://github.com/christianpva.png",
     nombre: "Christian Velasco",
     puesto: "Head de Alura e Instructor",
@@ -44,7 +44,7 @@ function App() {
   },
   {
     id: uuidv4(),
-    equipo: "Innovación y Gestión",
+    equipo: "Innovation and Management",
     foto: "https://github.com/JoseDarioGonzalezCha.png",
     nombre: "Jose Gonzalez",
     puesto: "Dev FullStack",
@@ -54,7 +54,7 @@ function App() {
   const [equipos, actualizarEquipos] = useState([
     {
       id: uuidv4(),
-      titulo: "Programación",
+      titulo: "Programming",
       colorPrimario: "#047127",
       colorSecundario: "#D9F7E9"
     },
@@ -78,19 +78,19 @@ function App() {
     },
     {
       id: uuidv4(),
-      titulo: "UX y Diseño",
+      titulo: "UX and Design",
       colorPrimario: "#610049",
       colorSecundario: "#FAE9F5"
     },
     {
       id: uuidv4(),
-      titulo: "Móvil",
+      titulo: "Mobile",
       colorPrimario: "#FFBA05",
       colorSecundario: "#FFF5D9"
     },
     {
       id: uuidv4(),
-      titulo: "Innovación y Gestión",
+      titulo: "Innovation and Management",
       colorPrimario: "#FA9200",
       colorSecundario: "#FFEEDF"
     }

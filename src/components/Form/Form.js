@@ -44,23 +44,23 @@ const Formulario = (props) => {
 
     return <section className="formulario">
         <form className="formulario__colab" onSubmit={manejarEnvio}>
-            <h2>Crear colaborador.</h2>
+            <h2>New member</h2>
             <Field
-                titulo="Nombre"
-                placeholder="Ingresar nombre"
+                titulo="Name"
+                placeholder="Member's name"
                 required
                 valor={nombre}
                 actualizarValor={actualizarNombre}
             />
             <Field
-                titulo="Puesto"
-                placeholder="Ingresar puesto"
+                titulo="Task"
+                placeholder="Task name"
                 required
                 valor={puesto}
                 actualizarValor={actualizarPuesto}
             />
             <Field
-                titulo="Foto"
+                titulo="Picture"
                 placeholder="Ingresar enlace de foto"
                 required
                 //valor={foto} ESTE ERA EL ERROR
@@ -78,10 +78,10 @@ const Formulario = (props) => {
             </Boton>
         </form>
         <form  className="formulario__equipo" onSubmit={manejarNuevoEquipo}>
-            <h2>Crear equipo.</h2>
+            <h2>New team</h2>
             <Field
-                titulo="Titulo"
-                placeholder="Ingresar titulo"
+                titulo="Title"
+                placeholder="Team title"
                 required
                 valor={titulo}
                 actualizarValor={actualizarTitulo}
