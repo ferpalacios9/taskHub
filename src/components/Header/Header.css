@@ -15,24 +15,40 @@
     filter: blur(1px);
 }
 
-.probando {
-    color: white;
-    font-size: 50px;
-}
-
 .contenido {
     display: flex;
     flex-direction: column;
     position: absolute;
     height: 300px;
+    width: 500px;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     border-radius: 5px;
 }
 
+.info__container {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.info__container h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.info__container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .contenido button {
-    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
 }

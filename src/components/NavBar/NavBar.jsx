@@ -23,7 +23,7 @@ const NavigationBar = () => {
                     </Navbar.Brand>
                     <Nav className="ajuste__nav">
                         <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#proyecto">New project</Nav.Link>
+                        <Nav.Link href="#proyecto">New Project</Nav.Link>
                         <Nav.Link href="#equipos">Team</Nav.Link>
                     </Nav>
                 </Container>

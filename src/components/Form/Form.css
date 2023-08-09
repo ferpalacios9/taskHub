@@ -1,17 +1,14 @@
 .formulario {
     display: flex;
     justify-content: space-evenly;
-    margin: 80px 50px;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .formulario form {
-    width: 35%;
     background-color: #F6F6F6;
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    padding: 8px 60px;
 }
 
 .formulario__equipo {
@@ -22,7 +19,34 @@
 
 .formulario h2 {
     font-size: 24px;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     color: #212121;
     margin-top: 27px;
 }
+
+
+@media screen and (max-width:549px){
+    .formulario {
+        margin: 40px 25px;
+    }
+
+    .formulario form {
+        padding: 8px 30px;
+    }
+
+    .formulario__equipo {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:550px){
+    .formulario {
+        margin: 80px 50px;
+    }
+
+    .formulario form {
+        padding: 8px 60px;
+    }
+}
+

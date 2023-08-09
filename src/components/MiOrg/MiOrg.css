@@ -6,12 +6,12 @@
 }
 
 .title {
-    font-family: 'Prata', serif;
-    color: #6278F7;
+    font-family: 'Montserrat', sans-serif;
+    color: #131353;
     font-size: 40px;
     font-weight: 400;
     padding-bottom: 24px;
-    border-bottom: 4px solid #6278F7;
+    border-bottom: 4px solid #131353;
     margin: 40px 0;
 }
 
