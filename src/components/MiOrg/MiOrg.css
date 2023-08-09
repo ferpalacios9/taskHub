@@ -17,6 +17,30 @@
 
 .orgSection img {
     position: absolute;
-    right: 20%;
     cursor: pointer;
+}
+
+@media screen and (max-width:549px) {
+    .orgSection {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .orgSection img {
+        position: relative;
+        margin: 10px auto 0;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .orgSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .orgSection img {
+        right: 5%;
+    }
 }

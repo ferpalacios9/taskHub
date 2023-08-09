@@ -11,6 +11,12 @@
     border-radius: 20px;
 }
 
+.formulario__colab {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+}
+
 .formulario__equipo {
     display: flex;
     flex-direction: column;
@@ -37,6 +43,7 @@
 
     .formulario__equipo {
         margin-top: 20px;
+        width: 100%;
     }
 }
 
