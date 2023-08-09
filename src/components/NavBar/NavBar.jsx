@@ -21,7 +21,7 @@ const NavigationBar = () => {
                         />{' '}
                         TaskHub
                     </Navbar.Brand>
-                    <Nav className="ajuste__nav">
+                    <Nav className="link__nav">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#proyecto">New Project</Nav.Link>
                         <Nav.Link href="#equipos">Team</Nav.Link>

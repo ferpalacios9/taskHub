@@ -10,7 +10,8 @@
 
 .header img {
     width: 100%;
-    height: 100%; /* La imagen mantendrá su altura original */
+    height: 100%;
+    /* La imagen mantendrá su altura original */
     object-fit: cover;
     filter: blur(1px);
 }
@@ -18,9 +19,8 @@
 .contenido {
     display: flex;
     flex-direction: column;
-    position: absolute;
     height: 300px;
-    width: 500px;
+    position: absolute;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
@@ -51,4 +51,16 @@
     width: 60%;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media screen and (min-width:0px) {
+    .contenido {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .contenido {
+        width: 500px;
+    }
 }

@@ -8,3 +8,31 @@
 }
 
 
+@media screen and (min-width:0px) {
+    .new__Nav {
+        padding: 0;
+    }
+
+    .new__container {
+        flex-direction: column;
+    }
+
+    .link__nav {
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .new__Nav {
+        padding: 8px 0
+    }
+
+    .new__container {
+        flex-direction: initial;
+    }
+
+    .link__nav {
+        width: auto;
+    }
+}
