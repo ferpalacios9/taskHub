@@ -28,20 +28,23 @@ const Formulario = (props) => {
         }
         registrarColaborador(datosAEnviar)
         alert("New member added");
-
-        // console.log(foto)
         
+        // Resetear los estados de los campos después de enviar el formulario
+        actualizarNombre("");
+        actualizarPuesto("");
+        actualizarFoto("");
+        actualizarEquipo("");
     }
 
     const manejarNuevoEquipo = (e) => {
         e.preventDefault()
         crearEquipo({ titulo, colorPrimario: color })
         alert("New team added");
-    }
 
-    // Cargar imagen colaborador
-    const cargarImagen = (e) => {
-        console.log("Imagen cargada")
+        // Resetear los estados de los campos después de enviar el formulario
+        actualizarTitulo("");
+        actualizarColor("");
+        
     }
 
     return <section className="formulario" id="form">

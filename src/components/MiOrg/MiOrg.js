@@ -10,7 +10,7 @@ const MiOrg = (props) => {
         actualizarMostrar(!mostrar)
     }*/
 
-    return <section className="orgSection">
+    return <section className="orgSection" id="org">
         <h3 className="title">My organization</h3>
         <img src="/img/add_button.png" alt="add" onClick={props.cambiarMostrar} />
     </section>

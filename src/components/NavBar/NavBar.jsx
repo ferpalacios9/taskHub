@@ -3,10 +3,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.css';
 import "./NavBar.css"
+import { Link } from 'react-scroll';
 
 
 
 const NavigationBar = () => {
+
+    const refresh = () => window.location.reload(true)
+
     return (
         <>
             <Navbar className='new__Nav' bg="dark" data-bs-theme="dark">
@@ -22,9 +26,25 @@ const NavigationBar = () => {
                         TaskHub
                     </Navbar.Brand>
                     <Nav className="link__nav">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#proyecto">New Project</Nav.Link>
-                        <Nav.Link href="#equipos">Team</Nav.Link>
+                        <Nav.Link href="#home" onClick={refresh}>Home</Nav.Link>
+                        <Nav.Link href="#proyecto">
+                            <Link
+                                to="form"
+                                smooth={true}
+                                duration={400}
+                            >
+                                New Project
+                            </Link>
+                        </Nav.Link>
+                        <Nav.Link href="#equipos">
+                            <Link
+                                to="org"
+                                smooth={true}
+                                duration={400}
+                            >
+                                Team
+                            </Link>
+                        </Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
